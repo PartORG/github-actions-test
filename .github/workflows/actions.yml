@@ -1,8 +1,20 @@
 name: Actions Workflow
 
 on:
-  repository_dispatch:
-    types: [build]
+  push:
+    branches:
+      - master
+      - 'feature/*' # matches feature/featureA, does not match feature/feat/A
+      - 'feature/**'  # matches all
+      - '!feature/featC'  # will ignore this branch!!!
+    tags:
+      - v1.*
+    paths:
+      - '**.js'  # when we push any JS file it will trigger this workflow
+      - '!filename.js'  # exclude this file
+
+#  repository_dispatch:
+#    types: [build]
 #  schedule:
 #    - cron: "0/5 * * * *"
 #    - cron: "0/6 * * * *"
@@ -14,9 +26,9 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Payload
-        run:
-          echo "${{ github.event.client_payload.env }}"
+#      - name: Payload
+#        run:
+#          echo "${{ github.event.client_payload.env }}"
       - name: List Files
         run: |
           pwd
