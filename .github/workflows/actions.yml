@@ -7,11 +7,11 @@ on:
       - 'feature/*' # matches feature/featureA, does not match feature/feat/A
       - 'feature/**'  # matches all
       - '!feature/featC'  # will ignore this branch!!!
-    tags:
-      - v1.*
-    paths:
-      - '**.js'  # when we push any JS file it will trigger this workflow
-      - '!filename.js'  # exclude this file
+#    tags:
+#      - v1.*
+#    paths:
+#      - '**.js'  # when we push any JS file it will trigger this workflow
+#      - '!filename.js'  # exclude this file
 
 #  repository_dispatch:
 #    types: [build]
