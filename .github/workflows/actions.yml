@@ -1,12 +1,12 @@
 name: Actions Workflow
 
 on:
-  push:
-    branches:
-      - master
-      - 'feature/*' # matches feature/featureA, does not match feature/feat/A
-      - 'feature/**'  # matches all
-      - '!feature/featC'  # will ignore this branch!!!
+#  push:
+#    branches:
+#      - master
+#      - 'feature/*' # matches feature/featureA, does not match feature/feat/A
+#      - 'feature/**'  # matches all
+#      - '!feature/featC'  # will ignore this branch!!!
 #    tags:
 #      - v1.*
 #    paths:
