@@ -24,18 +24,33 @@ A demonstration repository for setting up and testing GitHub Actions workflows i
 
 ## Features
 
-- **Automated CI/CD with GitHub Actions**: Streamline your development process by automating tests and deployments.
-- **Comprehensive Test Coverage using Jest**: Ensure your code is robust with thorough testing.
-- **Easy Project Setup with a Streamlined File Structure**: Get started quickly with a well-organized project layout.
-- **Documentation Support with `docs/` Directory**: Access detailed documentation for easy reference.
-- **Scalable Architecture Prepared for Integration and Deployment**: Design your project to grow with your needs.
-- **Robotic Process Automation for Development Tasks**: Automate repetitive tasks to save time and reduce errors.
-- **Error-Free Deployment Ensured by Automated Testing**: Deploy with confidence knowing tests have passed.
-- **GitHub Actions Integration Examples for Workflow Automation**: Learn how to use GitHub Actions for various workflows.
+### Automated CI/CD with GitHub Actions
+Streamline your development process by automating tests, builds, and deployments.
+
+### Comprehensive Test Coverage using Jest
+Ensure your code is robust with thorough unit and integration tests.
+
+### Easy Project Setup with a Streamlined File Structure
+Get started quickly with a well-organized project layout.
+
+### Documentation Support with `docs/` Directory
+Access detailed documentation for easy reference.
+
+### Scalable Architecture Prepared for Integration and Deployment
+Design your application to grow with your needs.
+
+### Robotic Process Automation for Development Tasks
+Automate repetitive tasks to save time and reduce errors.
+
+### Error-Free Deployment Ensured by Automated Testing
+Deploy with confidence knowing that tests have passed.
+
+### GitHub Actions Integration Examples for Workflow Automation
+Learn how to leverage GitHub Actions for various automation scenarios.
 
 ## How It Works
 
-This project uses GitHub Actions to automate the CI/CD pipeline. The workflow is triggered on push events and includes steps for linting, testing, and deployment. Jest is used for running tests, ensuring that your code meets quality standards before deployment.
+The repository is structured for Node.js development, utilizing Express.js for server setup and routing. It includes a README.md file with detailed instructions on how to set up and use the project. The project structure is organized into `src/`, `tests/`, and `docs/` directories. The package.json file contains metadata and dependencies.
 
 ## Technology Stack
 
@@ -136,27 +151,16 @@ github-actions-test/
 
 ## Development
 
-The development workflow involves:
-
-1. **Code Changes**: Make changes to the source code in the `src/` directory.
-2. **Testing**: Run tests using `npm test` to ensure your changes do not break existing functionality.
-3. **Committing Changes**: Commit your changes with a descriptive message.
-4. **Pushing Changes**: Push your changes to the remote repository.
+The development workflow involves setting up a Node.js environment, installing dependencies, configuring environment variables, and running tests. The project is designed to be scalable and ready for integration and deployment.
 
 ## Testing
 
-Tests are written using Jest and can be run with:
-
-```bash
-npm test
-```
-
-This will execute all tests in the `tests/` directory.
+Tests are conducted using Jest, ensuring the codebase remains robust and reliable.
 
 ## Limitations
 
-- The project is designed for Node.js environments.
-- GitHub Actions workflows may vary based on specific requirements.
+- Limited support for Windows environments.
+- No support for legacy browsers.
 
 ## License
 
